@@ -32,6 +32,20 @@ a:focus {
   text-decoration: underline;
 }
 
+/*//////////////////////BODY TAGS//////////////////////*/
+
+.body-h1 {
+  color: #222;
+  padding: 15px 0 0 0;
+  width: 100%;
+}
+
+.margin-auto {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0 2%;
+  }
+
 
 /*//////////////////////MEDIA QUERIES//////////////////////*/
 
@@ -67,28 +81,31 @@ a:focus {
   }
 
   .menu {
-    text-align: center;
     display: block;
     clear:left;
     position: absolute;
     text-align: center;
     width: 100%;
-  }
-
-  .menu ul {
+    z-index: 10000000000000;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    opacity: .99;
   }
 
   .menu li {
     display: block;
     padding:15px 0 15px 0;
     border-bottom:#dddddd 1px solid;
+    background: #f6f6f6;
   }
 
   .menu li:hover {
-    background: #f6f6f6;
+    background: #fff;
+  }
+  
+  .margin-auto {
+    max-width: 660px;
   }
 
 }
@@ -128,6 +145,10 @@ a:focus {
   
   .menu li a {
     padding: 15px 2.5%;
+  }
+  
+  .margin-auto {
+    max-width: 660px;
   }
   
 }
