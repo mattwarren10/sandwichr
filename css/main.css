@@ -1,3 +1,86 @@
+/*//////////////////////HEADER AND NAV//////////////////////*/
+
+header {
+  background: #222;
+  margin: 0;
+  width: 100%;
+}
+
 h1 {
-  
+  color: #eee;
+  margin: 0;
+  padding: 1.5%;
+}
+
+.hb{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  padding: 2% 1.5%;
+  color:#eee;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.x{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding: 2% 1.5%;
+  color:#eee;
+  border:0;
+  font-size:3em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.menu {
+  text-align: center;
+  display: block;
+  clear:left;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: block;
+  padding:15px 0 15px 0;
+  border-bottom:#dddddd 1px solid;
+}
+
+.menu li:hover {
+  background: #f6f6f6;
+}
+
+
+
+/*//////////////////////HYPERLINKS//////////////////////*/
+
+a:link,
+a:visited {
+  color: #8cc0b0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #188060;
+}
+
+a:focus {
+  text-decoration: underline;
 }
