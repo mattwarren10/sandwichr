@@ -1,4 +1,7 @@
-/*//////////////////////HEADER//////////////////////*/
+/*//////////////////////GENERAL//////////////////////*/
+body {
+  font-family: 'Source Sans Pro', sans-serif;  
+}
 
 header {
   background: #222;
@@ -98,6 +101,7 @@ a:focus {
     box-sizing: border-box;
     display: inline-block;
     text-align: left;
+    width: 24%;
   }
   
   .menu {
