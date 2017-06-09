@@ -16,6 +16,12 @@ h1 {
   padding: 1.5%;
 }
 
+footer {
+  padding: 0 2%;
+  max-width: 425px;
+  margin: 0 auto;
+}
+
 /*//////////////////////HYPERLINKS//////////////////////*/
 
 a:link,
@@ -41,10 +47,14 @@ a:focus {
 }
 
 .margin-auto {
-    margin: 0 auto;
-    max-width: 500px;
-    padding: 0 2%;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 0 2%;
   }
+
+.copyright {
+  text-align: center;
+}
 
 
 /*//////////////////////MEDIA QUERIES//////////////////////*/
