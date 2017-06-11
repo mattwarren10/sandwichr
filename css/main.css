@@ -60,7 +60,7 @@ a:focus {
 /*//////////////////////MEDIA QUERIES//////////////////////*/
 
 @media screen and (max-width: 768px) {
-  .hb{
+  #hb{
     background:none;
     position:absolute;
     top:0;
@@ -75,7 +75,7 @@ a:focus {
     z-index:10000000000000;
   }
 
-  .x{
+  #x{
     background:none;
     position:absolute;
     top:0px;
@@ -90,7 +90,7 @@ a:focus {
     z-index:10000000000000;
   }
 
-  .menu {
+  #menu {
     display: block;
     clear:left;
     position: absolute;
@@ -103,14 +103,14 @@ a:focus {
     opacity: .99;
   }
 
-  .menu li {
+  #menu li {
     display: block;
     padding:15px 0 15px 0;
     border-bottom:#dddddd 1px solid;
     background: #f6f6f6;
   }
 
-  .menu li:hover {
+  #menu li:hover {
     background: #fff;
   }
   
@@ -131,7 +131,7 @@ a:focus {
     width: 24%;
   }
   
-  .menu {
+  #menu {
     box-sizing: border-box;
     display: inline-block;
     text-align: right;
@@ -153,7 +153,7 @@ a:focus {
     list-style: none;
   }
   
-  .menu li a {
+  #menu li a {
     padding: 15px 2.5%;
   }
   
@@ -164,7 +164,7 @@ a:focus {
 }
 
 @media screen and (min-width: 1240px) {
-/*    .menu {
+/*    #menu {
      width: 85%;  
    }
    */
