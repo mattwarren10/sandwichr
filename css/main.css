@@ -42,7 +42,7 @@ a:focus {
 
 .body-h1 {
   color: #bf9000;
-  padding: 15px 0 0 0;
+  padding: 15px 0 15px;
   width: 100%;
 }
 
@@ -55,6 +55,38 @@ a:focus {
 .copyright {
   text-align: center;
 }
+
+
+/*//////////////////////PICTURES//////////////////////*/
+
+#gp {
+  max-width: 95%;
+  padding: 20px;
+}
+
+#participants {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 5% 0;
+}
+
+#participants li {
+  display: inline-block;
+  margin: 0 5% 10%;
+}
+
+#participants li:hover {
+  background: linear-gradient(#818181, transparent, 90%),
+              no-repeat;
+}
+
+#participants li img {
+  max-width: 250px;
+  border-radius: 1%;
+  box-shadow: 0 3px 2px .5px rgba(34, 34, 34, .2);
+  background-color: white;
+}
+
 
 
 /*//////////////////////MEDIA QUERIES//////////////////////*/
@@ -158,7 +190,11 @@ a:focus {
   }
   
   .margin-auto {
-    max-width: 660px;
+    max-width: 720px;
+  }
+
+  #participants li {
+    margin: 0 7.5% 10%;
   }
   
 }
