@@ -4,14 +4,14 @@ body {
 }
 
 header {
-  background: #222;
+  background: #990000;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
 h1 {
-  color: #eee;
+  color: #f1c232;
   margin: 0;
   padding: 1.5%;
 }
@@ -26,12 +26,12 @@ footer {
 
 a:link,
 a:visited {
-  color: #8cc0b0;
+  color: #bf9000;
   text-decoration: none;
 }
 
 a:hover {
-  color: #188060;
+  color: #f1c232;
 }
 
 a:focus {
@@ -41,7 +41,7 @@ a:focus {
 /*//////////////////////BODY TAGS//////////////////////*/
 
 .body-h1 {
-  color: #222;
+  color: #bf9000;
   padding: 15px 0 0 0;
   width: 100%;
 }
