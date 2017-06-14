@@ -16,6 +16,10 @@ h1 {
   padding: 1.5%;
 }
 
+p {
+  line-height: 1.6;
+}
+
 footer {
   padding: 15px 2%;
   max-width: 425px;
@@ -55,6 +59,46 @@ a:focus {
 .copyright {
   text-align: center;
 }
+
+/*//////////////////////RESEARCH//////////////////////*/
+
+.database {
+  max-width: 960px;
+  margin: 10px 20px;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+tr:nth-child(even) {
+  background: #e8eeef;
+}
+
+th, td {
+  text-align: left;
+  padding: 20px;
+  font-weight: 300;
+}
+
+tfoot tr {
+  background: none;
+}
+
+tfoot td {
+  padding: 10px 2px;
+  font-size: 0.8em;
+  font-style: italic;
+  color: #8a97a0;
+}
+
 
 
 /*//////////////////////PICTURES//////////////////////*/
