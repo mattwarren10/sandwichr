@@ -87,6 +87,11 @@ a:focus {
   background-color: white;
 }
 
+/*//////////////////////DATAVIZ IMAGES//////////////////////*/
+
+#e19, #e13 {
+  max-width: 720px;
+}
 
 
 /*//////////////////////MEDIA QUERIES//////////////////////*/
