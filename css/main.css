@@ -94,6 +94,13 @@ a:focus {
 }
 
 
+/*//////////////////////SOLUTION IMAGES//////////////////////*/
+
+#sketch {
+  list-style-type: none;
+}
+
+
 /*//////////////////////MEDIA QUERIES//////////////////////*/
 
 @media screen and (max-width: 768px) {
@@ -155,6 +162,12 @@ a:focus {
     max-width: 660px;
   }
 
+  #sketch .si img {
+    width: 300px;
+    /*margin: 0 5% 10%;*/
+    margin: 40px 0 5px;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -201,12 +214,11 @@ a:focus {
   #participants li {
     margin: 0 7.5% 10%;
   }
-  
-}
 
-@media screen and (min-width: 1240px) {
-/*    #menu {
-     width: 85%;  
-   }
-   */
+
+  #sketch li img{
+    max-width: 600px;
+    margin: 40px 0 5px;
+  }
+  
 }
