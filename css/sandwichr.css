@@ -133,6 +133,10 @@ tfoot td {
 
 /*//////////////////////DATAVIZ images/i101project//////////////////////*/
 
+.ig {
+  max-width: 720px;
+}
+
 #e19, #e13 {
   max-width: 720px;
 }
