@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sandwichr | Presentation</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/sandwichr.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Sandwichr
+      </h1>
+      <button id="hb">&#9776;</button>
+      <button id="x">&#735;</button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="dataviz.html">Data &amp; Visualization</a></li>
+        <li><a href="solution.html">Solution</a></li>
+        <li><a href="presentation.html">Presentation</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="margin-auto">
+        <h1 class="body-h1">
+          Presentation
+        </h1>
+        <iframe src="https://docs.google.com/presentation/d/1i-DrHsFEYdXBDyYdbIvsM7C9eRUBylgWuK2bY-D0zHg/embed?start=false&loop=true&delayms=3000" frameborder="0" width="708" height="420" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+        </iframe>
+      </div>
+      <footer>
+      <div class="copyright">
+        &copy; 2017 <a href="http://pages.iu.edu/~madimcco/home.html">Madison McCoy</a>, <a href="https://mattwarren.us">Matt Warren</a>, <a href="http://pages.iu.edu/~julzhu/home.html">Julia Zhu</a>, <a href="http://pages.iu.edu/~hanzou/home.html">Han Zou</a>
+      </div>
+    </div>  
+    
+    <script>// CREATE JS HAMBURGER MENU
+
+var hb = document.getElementById('hb');
+var x = document.getElementById('x');
+var menu = document.getElementById('menu')
+
+
+// show menu when clicking hamburger button
+hb.addEventListener( 'click', function showMenu () {
+  if (window.innerWidth < 769) {
+    x.style.display = 'inline-block';
+    hb.style.display = 'none';
+    menu.style.display = 'block';
+  }
+})
+
+// hide menu when click the x button
+x.addEventListener( 'click', function hideMenu () {
+  if (window.innerWidth < 769) {
+    x.style.display = 'none';
+    hb.style.display = 'inline-block';
+    menu.style.display = 'none';
+  } 
+})
+
+// hide x button and menu on load
+menu.style.display = 'none';
+x.style.display = 'none';
+
+if (window.innerWidth > 768) {
+    hb.style.display = 'none';
+    x.style.display = 'none';
+    menu.style.display = 'inline-block';
+  } </script>
+  </body>
+</html>

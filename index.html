@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sandwichr | I101 Project</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/sandwichr.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Sandwichr
+      </h1>
+      <button id="hb">&#9776;</button>
+      <button id="x">&#735;</button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="dataviz.html">Data &amp; Visualization</a></li>
+        <li><a href="solution.html">Solution</a></li>
+        <li><a href="presentation.html">Presentation</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="margin-auto">
+        <h1 class="body-h1">
+          Our Problem Statement
+        </h1>
+        <p>
+          A local sandwich restaurant (Sandwichr) is gaining popularity in Bloomington. However, the company has no technology infrastructure to handle this growth. Provide a solution for this restaurant to manage orders and customers in efforts of creating a rewards program and a strong marketing campaign towards loyal customers.
+        </p>
+        <p>
+          Our team, working as a cohesive unit, was able to address the problem given to us. Equal effort was given by each of the four members of our team to provide many different solutions that could help Sandwichr handle their growth as they continue to grow in popularity. Each member was tasked to research several possible solutions. The final topics chosen were point-of-sale systems (or POS), social media marketing, and the implementation of online ordering and delivery. With this research, we were able to design a foolproof plan for Sandwichr that is guaranteed to help them handle their upcoming business, manage new and old customers, and expand their business by using online ordering. 
+        </p>
+        <p>
+          This website was created to showcase our research and solutions to all who is interested in the process. This introduction page is used to showcase each member of our team and explain the problem at hand. The research tab encloses all of our research done about POS systems, social media, online ordering, as well as include more personal data such as surveys. The data and visualization tab houses data that can be seen from a more visual perspective using databases, graphs, and exhibits. The solution tab showcases our proposed solutions to the scenario that Sandwichr is facing. Here, in-depth and specific solutions can be found. The presentation tab holds Google Slides made that encompasses everything on this website in one place for easy access and understanding.
+        </p>
+        
+        <h1 class="body-h1">
+          Participants
+        </h1>
+        <img id="gp" src="images/i101project/group-picture.jpg" alt="Group Picture">
+        <ul id="participants">
+          <li>
+            <a href="http://pages.iu.edu/~madimcco/home.html">
+              <img src="images/i101project/madison.jpg" alt="Madison">
+              <figcaption>Madison McCoy</figcaption>              
+            </a>
+          </li>
+          <li>
+            <a href="http://mattwarren.us/">
+              <img src="images/i101project/matt.jpg" alt="Matt">
+              <figcaption>Matt Warren</figcaption>              
+            </a>
+          </li>
+          <li>
+            <a href="http://pages.iu.edu/~julzhu/home.html">             
+              <img src="images/i101project/julia.jpg" alt="Julia">
+              <figcaption>Julia Zhu</figcaption>              
+            </a>
+          </li>
+          <li>
+            <a href="http://pages.iu.edu/~hanzou/home.html">             
+              <img src="images/i101project/han.jpg" alt="Han">
+              <figcaption>Han Zou</figcaption>              
+            </a>
+          </li>
+        </ul>
+        
+      </div>
+      <footer>
+        <div class="copyright">
+         &copy; 2017 <a href="http://pages.iu.edu/~madimcco/home.html">Madison McCoy</a>, <a href="https://mattwarren.us">Matt Warren</a>, <a href="http://pages.iu.edu/~julzhu/home.html">Julia Zhu</a>, <a href="http://pages.iu.edu/~hanzou/home.html">Han Zou</a>
+        </div>
+      </footer>
+    </div><!--END OF CONTENT DIV-->
+    
+    <script>// CREATE JS HAMBURGER MENU
+
+var hb = document.getElementById('hb');
+var x = document.getElementById('x');
+var menu = document.getElementById('menu')
+
+
+// show menu when clicking hamburger button
+hb.addEventListener( 'click', function showMenu () {
+  if (window.innerWidth < 769) {
+    x.style.display = 'inline-block';
+    hb.style.display = 'none';
+    menu.style.display = 'block';
+  }
+})
+
+// hide menu when click the x button
+x.addEventListener( 'click', function hideMenu () {
+  if (window.innerWidth < 769) {
+    x.style.display = 'none';
+    hb.style.display = 'inline-block';
+    menu.style.display = 'none';
+  } 
+})
+
+// hide x button and menu on load
+menu.style.display = 'none';
+x.style.display = 'none';
+
+if (window.innerWidth > 768) {
+    hb.style.display = 'none';
+    x.style.display = 'none';
+    menu.style.display = 'inline-block';
+  } </script>
+  </body>
+</html>

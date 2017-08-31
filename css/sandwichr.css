@@ -1,0 +1,272 @@
+/*//////////////////////GENERAL//////////////////////*/
+body {
+  font-family: 'Source Sans Pro', sans-serif;  
+}
+
+header {
+  background: #990000;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1 {
+  color: #f1c232;
+  margin: 0;
+  padding: 1.5%;
+}
+
+p {
+  line-height: 1.6;
+}
+
+footer {
+  padding: 15px 2%;
+  max-width: 425px;
+  margin: 0 auto;
+}
+
+/*//////////////////////HYPERLINKS//////////////////////*/
+
+a:link,
+a:visited {
+  color: #bf9000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f1c232;
+}
+
+a:focus {
+  text-decoration: underline;
+}
+
+/*//////////////////////BODY TAGS//////////////////////*/
+
+.body-h1 {
+  color: #bf9000;
+  padding: 15px 0 15px;
+  width: 100%;
+}
+
+.margin-auto {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 0 2%;
+  }
+
+.copyright {
+  text-align: center;
+}
+
+/*//////////////////////RESEARCH//////////////////////*/
+
+.database {
+  max-width: 960px;
+  margin: 10px 20px;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+tr:nth-child(even) {
+  background: #e8eeef;
+}
+
+th, td {
+  text-align: left;
+  padding: 20px;
+  font-weight: 300;
+}
+
+tfoot tr {
+  background: none;
+}
+
+tfoot td {
+  padding: 10px 2px;
+  font-size: 0.8em;
+  font-style: italic;
+  color: #8a97a0;
+}
+
+
+
+/*//////////////////////PICTURES//////////////////////*/
+
+#gp {
+  max-width: 95%;
+  padding: 20px;
+}
+
+#participants {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 5% 0;
+}
+
+#participants li {
+  display: inline-block;
+  margin: 0 5% 10%;
+}
+
+#participants li:hover {
+  background: linear-gradient(#818181, transparent, 90%),
+              no-repeat;
+}
+
+#participants li img {
+  max-width: 250px;
+  border-radius: 1%;
+  box-shadow: 0 3px 2px .5px rgba(34, 34, 34, .2);
+  background-color: white;
+}
+
+/*//////////////////////DATAVIZ images/i101project//////////////////////*/
+
+.ig {
+  max-width: 720px;
+}
+
+#e19, #e13 {
+  max-width: 720px;
+}
+
+
+/*//////////////////////SOLUTION images/i101project//////////////////////*/
+
+#sketch {
+  list-style-type: none;
+}
+
+
+/*//////////////////////MEDIA QUERIES//////////////////////*/
+
+@media screen and (max-width: 768px) {
+  #hb{
+    background:none;
+    position:absolute;
+    top:0;
+    right:0;
+    padding: 2% 1.5%;
+    color:#eee;
+    border:0;
+    font-size:1.4em;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+  }
+
+  #x{
+    background:none;
+    position:absolute;
+    top:0px;
+    right:0;
+    padding: 2% 1.5%;
+    color:#eee;
+    border:0;
+    font-size:3em;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+  }
+
+  #menu {
+    display: block;
+    clear:left;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 10000000000000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    opacity: .99;
+  }
+
+  #menu li {
+    display: block;
+    padding:15px 0 15px 0;
+    border-bottom:#dddddd 1px solid;
+    background: #f6f6f6;
+  }
+
+  #menu li:hover {
+    background: #fff;
+  }
+  
+  .margin-auto {
+    max-width: 660px;
+  }
+
+  #sketch .si img {
+    width: 300px;
+    /*margin: 0 5% 10%;*/
+    margin: 40px 0 5px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: inline-block;
+  }
+  h1 {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: left;
+    width: 24%;
+  }
+  
+  #menu {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: right;
+    clear: left;
+    list-style: none;
+    width: 75%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0;
+  }
+  
+  li {
+    display: inline;
+    list-style: none;
+  }
+  
+  #menu li a {
+    padding: 15px 2.5%;
+  }
+  
+  .margin-auto {
+    max-width: 720px;
+  }
+
+  #participants li {
+    margin: 0 7.5% 10%;
+  }
+
+
+  #sketch li img{
+    max-width: 600px;
+    margin: 40px 0 5px;
+  }
+  
+}

@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sandwichr | Data &amp; Visualization</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/sandwichr.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Sandwichr
+      </h1>
+      <button id="hb">&#9776;</button>
+      <button id="x">&#735;</button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="dataviz.html">Data &amp; Visualization</a></li>
+        <li><a href="solution.html">Solution</a></li>
+        <li><a href="presentation.html">Presentation</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="margin-auto">
+        <h1 class="body-h1">
+          Data &amp; Visualization
+        </h1>
+        <p>
+          Our dataset was gathered from Cornell University Scholarly Commons. View it <a href="http://scholarship.sha.cornell.edu/cgi/viewcontent.cgi?article=1072&context=chrpubs" target="_blank">here</a>. These infographics were created from the scholarly article.
+        </p>
+        <img class="ig" src="images/i101project/infographic-1.png" alt="infographic-1">
+        <br />
+        <br />
+        <br />
+        <img class="ig" src="images/i101project/infographic-2.png" alt="infographic-2">
+       <p>
+        This dataset is a collection of average ratings collected from 372 operators, owners, or managers of restaurants and 470 customers who have used online ordering through surveys conducted in 2011. Both groups were asked to rate their <q>perceived control, perceived convenience, need for interaction, technology anxiety, satisfaction, and intent to use the self-service technology or recommend it to others</q> (Kimes). 
+       </p>
+       <p>
+         For customers, the graph indicates that there is higher perceived control, convenience, and intent to use the technology. Customers find less need for interaction when using an online ordering system, and technology anxiety remains about the same. Operators also perceived increased control, convenience, and behavioral intent. Just like customers, operators have less perceived need for interaction. However, operators found a decrease in perceived technology anxiety. 
+       </p>
+       <img id="e19" src="images/i101project/exhibit-19.png">     
+       <p>
+         From this dataset, we separated the values given by the operators and consumers and produced a graph comparing each group’s response to ordering with and without an online ordering system.
+       </p>
+       <p>
+        The graph below shows the effects of online ordering on order volume and service. Based on the results of the surveys, <q>about a third (29.1%) reported an increase in order volume, 26.8 percent said that their service had improved, and another 32.3 percent indicated that they had experienced both increased sales volume and increased service</q> (Kimes). This means that the majority of businesses found that online ordering improved business, customer satisfaction, or both.
+       </p>
+       <img id="e13" src="images/i101project/exhibit-13.png">
+       <p>
+        Through the datasets and visualizations, we found that incorporating an online ordering system increases the quality of service that increases customer satisfaction and improves business to restaurant operators or owners. Both customers and owners find more control, convenience, and desire to use the technology with the existence of online ordering. Restaurant operators also find increase in order volume and/or service.
+       </p>
+       <p>
+        The Point of Sale system, or POS system is a commonly used system that restaurants use, especially in restaurants that provide online ordering. The system is used for clocking in and clocking out for employees, and it can act as a payroll system to a restaurant’s workers. A POS system tracks orders, inventory items, and take card payments from customers. These images show examples of how a POS system works and looks like when tracking inventory, displaying store layout, linking to Paypal, showing menu items, and giving daily reports.
+       </p>
+       <h1 class="body-h1">
+        Works Cited
+       </h1>
+       <p>
+         Kimes, Sheryl E. “The Current State of Online Food Ordering in the U.S. Restaurant Industry.” Cornell Hospitality Report, 2011: 6-18. Accessed 11 June 2017. http://scholarship.sha.cornell.edu/cgi/viewcontent.cgi?article=1072&context=chrpubs>. 
+       </p>
+      </div>
+      <footer>
+      <div class="copyright">
+        &copy; 2017 <a href="http://pages.iu.edu/~madimcco/home.html">Madison McCoy</a>, <a href="https://mattwarren.us">Matt Warren</a>, <a href="http://pages.iu.edu/~julzhu/home.html">Julia Zhu</a>, <a href="http://pages.iu.edu/~hanzou/home.html">Han Zou</a>
+      </div>
+    </div>
+    
+    <script>// CREATE JS HAMBURGER MENU
+
+var hb = document.getElementById('hb');
+var x = document.getElementById('x');
+var menu = document.getElementById('menu')
+
+
+// show menu when clicking hamburger button
+hb.addEventListener( 'click', function showMenu () {
+  if (window.innerWidth < 769) {
+    x.style.display = 'inline-block';
+    hb.style.display = 'none';
+    menu.style.display = 'block';
+  }
+})
+
+// hide menu when click the x button
+x.addEventListener( 'click', function hideMenu () {
+  if (window.innerWidth < 769) {
+    x.style.display = 'none';
+    hb.style.display = 'inline-block';
+    menu.style.display = 'none';
+  } 
+})
+
+// hide x button and menu on load
+menu.style.display = 'none';
+x.style.display = 'none';
+
+if (window.innerWidth > 768) {
+    hb.style.display = 'none';
+    x.style.display = 'none';
+    menu.style.display = 'inline-block';
+  } </script>
+  </body>
+</html>

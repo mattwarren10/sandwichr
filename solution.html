@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sandwichr | Solution</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/sandwichr.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Sandwichr
+      </h1>
+      <button id="hb">&#9776;</button>
+      <button id="x">&#735;</button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="dataviz.html">Data &amp; Visualization</a></li>
+        <li><a href="solution.html">Solution</a></li>
+        <li><a href="presentation.html">Presentation</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="margin-auto">
+        <h1 class="body-h1">
+          Solution
+        </h1>
+        <p>
+          A local sandwich shop in Bloomington is becoming more popular, with that come more expectations from customers. People in the world today expect technology to be a part of everything they do, including eating. This means that the local sandwich shop needs to incorporate technology into their business in order to continue to grow in popularity. 
+        </p>
+        <p>
+          Our team proposed a solution to this sandwich shop’s technological dilemma. We believe that through usage of social media profiles including Facebook, Instagram, Twitter, and Snapchat, they will be able to bring in more customers by posting about deals, coupons, sales, and more. We also believe that a POS, Point of Sales, system would make ringing in orders and taking care of customers a lot easier to handle. This system would have buttons for every option the customer would want, making it as simple as clicking on the right buttons to order the food for the employee. <q cite="bib01">One benefit of a POS system is that it simplifies communications between the kitchen and the wait staff</q> (Mealey). The POS system would also make things go much more smoothly as well as cut down on time. Finally our team believes they should have a website that allows online orders. A lot of the world is going toward online ordering and even delivery. 
+        </p>
+        <p>
+          The social media profiles are mainly being created in order to attract college students. The ability to have them follow the sandwich shop’s social media profiles makes them a lot more popular with that specific age group. Bloomington is a college town, which means that the sandwich shop’s main clientele would be these type of people. We would even use a social media management program app such as buffer in order to make it easier for the company to handle while still targeting the type of people they want to come into their shop. These types of apps make it possible for the company to manage several different social media profiles all at once (Patel). 
+        </p>
+        <p>
+          Our team believes that people will want to follow the social media profiles and use the website because people love being about to get coupons, discounts, and other great deals. Social media has already been a way for people to get these deals for other stores, therefore, it would almost be expected for a growing sandwich shop to be on social media to give these things away as well. We believe the website will be something people want to use because in this day and age people are all about making things as time efficient as possible. The website would give people access to the menu, allow them to place their order online, and possibly even have it delivered to them, just by filling out the necessary information online.
+        </p>
+        <h1 class="body-h1">Sketches</h1>
+        <ul id="sketch">
+          <li class="si">
+            <img src="images/i101project/order-online.jpg" alt="order-online">
+            <figcaption>The ability to seamlessly order from home.</figcaption>
+          </li>
+          <li class="si">
+            <img src="images/i101project/pos.jpg" alt="pos">
+            <figcaption>Employees would process orders through a point of sale system.</figcaption>
+          </li>
+          <li class="si">
+            <img src="images/i101project/web-presence.jpg" alt="web-presence">
+            <figcaption>Sandwichr's web presence would exist on major social media sites.</figcaption>
+          </li>
+          <li class="si">
+            <img src="images/i101project/sketch-overview.jpg" alt="sketch-overview">
+            <figcaption>An overview of our full sketch.</figcaption>
+          </li>
+        </ul> 
+        <h1 class="body-h1">Works Cited</h1>
+        <p>
+          Mealey, Lorri. "Why You Need A POS System." The Balance. The Balance, <time datetime="2016-08">11 Aug. 2016.</time> Web. 11 June 2017. https://www.thebalance.com/why-you-need-a-pos-system-2888877.
+        </p>
+        <p>
+          Patel, Sujan. "How To Quickly Master Social Media Marketing For Small Business." Forbes.
+          Forbes Magazine, <time datetime="2016-03">23 Mar. 2016.</time> Web. 11 June 2017. https://www.forbes.com/sites/sujanpatel/2015/07/09/how-to-quickly-master-social-medi
+          a-marketing-for-small-business/#479e5a0c6c06.
+        </p>         
+      </div>    
+      <footer>
+      <div class="copyright">
+        &copy; 2017 <a href="http://pages.iu.edu/~madimcco/home.html">Madison McCoy</a>, <a href="https://mattwarren.us">Matt Warren</a>, <a href="http://pages.iu.edu/~julzhu/home.html">Julia Zhu</a>, <a href="http://pages.iu.edu/~hanzou/home.html">Han Zou</a>
+      </div>
+    </div>  
+    
+    <script>// CREATE JS HAMBURGER MENU
+
+var hb = document.getElementById('hb');
+var x = document.getElementById('x');
+var menu = document.getElementById('menu')
+
+
+// show menu when clicking hamburger button
+hb.addEventListener( 'click', function showMenu () {
+  if (window.innerWidth < 769) {
+    x.style.display = 'inline-block';
+    hb.style.display = 'none';
+    menu.style.display = 'block';
+  }
+})
+
+// hide menu when click the x button
+x.addEventListener( 'click', function hideMenu () {
+  if (window.innerWidth < 769) {
+    x.style.display = 'none';
+    hb.style.display = 'inline-block';
+    menu.style.display = 'none';
+  } 
+})
+
+// hide x button and menu on load
+menu.style.display = 'none';
+x.style.display = 'none';
+
+if (window.innerWidth > 768) {
+    hb.style.display = 'none';
+    x.style.display = 'none';
+    menu.style.display = 'inline-block';
+  } </script>
+  </body>
+</html>
